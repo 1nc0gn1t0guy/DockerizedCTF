@@ -14,7 +14,7 @@
     <div class="row">
             <h1>Robots</h1>
     </div>
-    <form action="guarda.php" method="POST">
+    <form action="pedidorobot.php" method="POST">
         <label for="nombre">Nombre del Robot</label>
         <input name="nombre" type="text" placeholder="Introduzca el nombre del robot">
         <label for="numero">Número de robots</label>

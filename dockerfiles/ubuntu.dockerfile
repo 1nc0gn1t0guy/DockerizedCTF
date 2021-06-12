@@ -1,8 +1,12 @@
 FROM rastasheep/ubuntu-sshd
 
 #create the new user
-RUN adduser --disabled-password --gecos '' user \
-&& echo "user:userpass" | chpasswd 
+#this user is used for pivoting to the admin user
+RUN adduser --disabled-password --gecos '' pepe \
+&& echo "pepe:pepeadmin" | chpasswd 
+#this user is able to auth as root
+RUN adduser --disabled-password --gecos '' admin \
+&& echo "admin:R0b0t1cs!" | chpasswd 
 
 #Set language and keyboard to Spanish
 RUN echo "LC_ALL=es_ES.UTF-8" >> /etc/environment
@@ -18,7 +22,3 @@ RUN apt-get update -y \
 && apt-get install curl -y \
 && apt-get install software-properties-common -y \
 && apt-get install sudo -y 
-
-#Run this in the container after logging in with "docker build -t --privileged=true test .""
-#RUN /usr/bin/dockerd -H unix:///var/run/docker.sock > dockerd.log 2>&1&
-

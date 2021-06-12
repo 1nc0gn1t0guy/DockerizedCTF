@@ -49,11 +49,17 @@ services:
         networks:
             - my-network
 
-    #ubuntu:
-    #    container_name: ubuntu
-    #    build:
-    #        context: ./dockerfiles:/ 
-    #testingcommingithub
+    openssh-server:
+        container_name: ubuntussh
+        build:
+            context: ./dockerfiles
+            dockerfile: ubuntu.dockerfile
+        ports:
+            - "22:22"
+        volumes:
+            - ./volumenes/ubuntu:/home/
+        networks:
+            - my-network
     
 
 networks:

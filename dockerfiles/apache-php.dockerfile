@@ -6,4 +6,4 @@ RUN apt-get update \
 
 EXPOSE 80
 
-COPY config/php.ini /usr/local/etc/php/
+#COPY config/php.ini /usr/local/etc/php/
