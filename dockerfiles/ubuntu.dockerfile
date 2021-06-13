@@ -1,3 +1,5 @@
+#pepe -> admin -> root
+#/home/pepe/flag1 -> /home/admin/flag2 -> flag3
 FROM rastasheep/ubuntu-sshd
 
 #create the new user
