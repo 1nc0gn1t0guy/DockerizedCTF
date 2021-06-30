@@ -23,4 +23,5 @@ RUN apt-get update -y \
 && apt-get install -y man less \
 && apt-get install curl -y \
 && apt-get install software-properties-common -y \
-&& apt-get install sudo -y 
+&& apt-get install sudo -y \
+&& apt-get install nmap -y
