@@ -1,3 +1,3 @@
 <header>
-        <a href="/">Los robots son el futuro</a>
+        <a href="/">Volver a la página principal</a>
 </header>
