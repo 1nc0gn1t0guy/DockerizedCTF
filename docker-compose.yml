@@ -1,17 +1,14 @@
 version: "3"
 
 services:
-    #servidor de base de datos oficial de mysql
-    #para acceder a la base de datos poner el siguiente comando: mysql -P 3306 --protocol=tcp -u root -p
+    
     mysql:
-        image: mysql:5.7 #esta versión posee una vulnerabilidad de explotación remota link: cso.computerworld.es/alertas/una-vulnerabilidad-en-mysql-permite-la-explotacion-remota-de-sus-servidores
+        image: mysql:5.7 
         container_name: mysql
         environment: 
             - MYSQL_DATABASE=database
             - MYSQL_ROOT_PASSWORD=R0b0t1cs!
-            #con este user vamos a hacer los robots y con el usuario root van a estar los usuarios admin (no se yo si esto va a ser asi)
-            # - MYSQL_USER=main_user
-            # - MYSQL_PASSWORD=Pr0duct10nD@t@b@s3
+
         networks:
             - my-network
         
@@ -23,6 +20,8 @@ services:
             - 3306:3306
         networks:
             - my-network
+        #f25a2fc72690b780b2a14e140ef6a9e0 = iloveyou - pepe
+        #5f4dcc3b5aa765d61d8327deb882cf99 = password - admin
 
     phpmyadmin:
         container_name: php_myadmin
