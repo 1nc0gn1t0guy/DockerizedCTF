@@ -30,7 +30,7 @@
         </form>
 
 
-        <h1>¿Tienes una cuenta? ¡Intenta loggearte!</h1>
+        <h1>¡Intenta loggearte!</h1>
         <form method ="POST" action="login.php" name="signin-form">
                 <div class="txt_field">
                     <label>Nombre de usuario</label>
