@@ -21,7 +21,8 @@ services:
         networks:
             - my-network
         #f25a2fc72690b780b2a14e140ef6a9e0 = iloveyou - pepe
-        #5f4dcc3b5aa765d61d8327deb882cf99 = password - admin
+        #5f4dcc3b5aa765d61d8327deb882cf99 = password - admin 
+        # how to john --format=raw-md5 --wordlist /usr/share/wordlists/rockyou.txt hash.txt
 
     phpmyadmin:
         container_name: php_myadmin

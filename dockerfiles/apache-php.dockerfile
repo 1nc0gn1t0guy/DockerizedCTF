@@ -5,5 +5,3 @@ RUN apt-get update \
   && docker-php-ext-install pdo pdo_mysql mysql mysqli
 
 EXPOSE 80
-
-#COPY config/php.ini /usr/local/etc/php/
