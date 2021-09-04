@@ -1,6 +1,6 @@
 <?php
     $user = "root";
-    $pass = "R0b0t1cs!";
+    $pass = "password";
 
     $conn = mysqli_connect('mysql', $user, $pass, 'users');
 
