@@ -4,7 +4,7 @@
 El presente proyecto presenta una prueba CTF dockerizada que va acompañada de una guía para poder aprender las bases del pentesting mediante el uso del aprendizaje autónomo.
 Dicha guía puede ser proporcionada escribiendo un email a *csr.dnl33@gmail.com*
 
-###Prerrequisitos
+### Prerrequisitos
 - Docker
 - Docker-compose
 
