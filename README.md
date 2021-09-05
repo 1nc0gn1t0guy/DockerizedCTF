@@ -8,6 +8,8 @@ Dicha guía puede ser proporcionada escribiendo un email a *csr.dnl33@gmail.com*
 - Docker
 - Docker-compose
 
+### Despliegue
+
 Una vez esté todo instalado y extraído en la carpeta deseada, para lanzar el CTF se deben seguir los siguientes pasos:
 - Colocarse en la carpeta raíz (donde se encuentre el archivo *docker-compose.yml*)
 - Ejecutar el comando **docker-compose build**
